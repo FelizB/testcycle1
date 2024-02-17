@@ -1,0 +1,39 @@
+<div class="container registerContainer">
+  <form [formGroup]="form" (submit)="submit()">
+    <br />
+
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Name</mat-label>
+            <input
+              formControlName="name"
+              type="text"
+              matInput
+              placeholder="."
+            />
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+    <mat-form-field class="example-full-width">
+      <mat-label>Email Address</mat-label>
+      <input formControlName="email" type="email" matInput placeholder="." />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Password</mat-label>
+      <input
+        formControlName="password"
+        type="password"
+        matInput
+        placeholder="."
+      />
+    </mat-form-field>
+    <div class="btnEnd">
+      <button type="submit" class="btn btn-outline-primary submitBtn">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
